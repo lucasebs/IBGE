@@ -40,7 +40,6 @@ def crawl(source,file):
 
 		set_indicadores(indicadores, file)
 
-
 def set_indicadores(indicadores, file):
 	for indicador in indicadores:	
 		# print(indicador['id'],indicador['posicao'],indicador['indicador'])
