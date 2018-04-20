@@ -1,10 +1,15 @@
 import requests as rq
 # import json
 import pandas as pd
+from social import *
 
-def open_file():
-	file = open('CSV/indicadores.csv', 'a')
-	file.write('pesquisa_id;pesquisa_nome;id;nome;posicao\n')
+def open_file(i):
+	if i:
+		file = open('CSV/indicadores_filtro.csv', 'a')
+	else:
+		file = open('CSV/indicadores.csv', 'a')
+		
+	file.write('pesquisa_id;pesquisa_nome;id;posicao;nome\n')
 	return file
 
 def close_file(file):
@@ -21,7 +26,11 @@ def get_pesquisas():
 	# df = df['id']	
 	return df
 
-def write_indicadores(pesquisa, pesquisa_nome, id, posicao, indicador, file):
+def get_indicadores():
+	df = pd.read_csv('CSV/indicadores.csv', error_bad_lines=False, sep=';')
+	return df
+
+def write_indicadores(pesquisa, pesquisa_nome, id, posicao, indicador, file):		
 	file.write(pesquisa + ';' + pesquisa_nome + ';' + id + ';' + posicao + ';' + indicador + '\n')
 
 def crawl(source,file):
@@ -47,11 +56,39 @@ def set_indicadores(pesquisa, pesquisa_nome, indicadores, file):
 		if indicador['children'] is not None:
 			set_indicadores(pesquisa, pesquisa_nome, indicador['children'], file)
 
-def main():
-	file = open_file()
-	source = 'https://servicodados.ibge.gov.br/api/v1/pesquisas/'
-	crawl(source,file)	
+def compare(file, list):
+	indicadores = get_indicadores()
+	for re in list:
+		# if len(re) > 1:
+		# 	for re_i in re:
+		# else:
+		# 
+		if len(re[0]) > 1:
+			compare(file,list)
 
+		cont = 0
+		n_existe = True
+		for indicador in indicadores:
+			if re in indicador['nome']:
+				write_indicadores(str(indicadores['pesquisa_id'][cont]),
+								indicadores['pesquisa_nome'][cont],
+								str(indicadores['id'][cont]),
+								str(indicadores['posicao'][cont]),
+								indicador['nome'], file)
+				ausente = False
+				cont += 1
+
+		if n_existe:
+			write_indicadores(" "," "," "," "," ", file)
+		
+
+def main():
+	# file = open_file(False)
+	# source = 'https://servicodados.ibge.gov.br/api/v1/pesquisas/'
+	# crawl(source,file)	
+
+	file = open_file(True)
+	compare(file, social)
 	close_file(file)    
 
 if __name__ == "__main__":
