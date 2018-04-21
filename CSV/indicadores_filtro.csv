@@ -1,236 +1,33 @@
+pesquisa_id;pesquisa_nome;id;posicao;nome
 36;Mapa de pobreza e desigualdade;30253;3.1;Limite inferior
 36;Mapa de pobreza e desigualdade;30254;3.2;Limite superior
-
-23;Censo;28971;13.3;Valor do rendimento nominal mediano mensal
-23;Censo;28977;13.3.1.2.1;Masculino
-23;Censo;28978;13.3.1.2.2;Feminino
-23;Censo;22885;13.4;Valor do rendimento nominal médio mensal
 23;Censo;22891;13.4.1.2.1;Masculino
 23;Censo;22892;13.4.1.2.2;Feminino
-
-
-23;Censo;25404;16.1.2.2;Classe de rendimento nominal mensal domiciliar per capita
-23;Censo;25405;16.1.2.2.1;Sem rendimento
-23;Censo;25406;16.1.2.2.1.1;Aglomerados subnormais
-23;Censo;25407;16.1.2.2.1.2;Situação domiciliar
 23;Censo;25408;16.1.2.2.1.2.1;Urbana
 23;Censo;25409;16.1.2.2.1.2.2;Rural
-23;Censo;25410;16.1.2.2.2;Até 1/4 de salário mínimo
-23;Censo;25411;16.1.2.2.2.1;Aglomerados subnormais
-23;Censo;25412;16.1.2.2.2.2;Situação domiciliar
 23;Censo;25413;16.1.2.2.2.2.1;Urbana
 23;Censo;25414;16.1.2.2.2.2.2;Rural
-23;Censo;25415;16.1.2.2.3;Mais de 1/4 a 1/2 salário mínimo
-23;Censo;25416;16.1.2.2.3.1;Aglomerados subnormais
-23;Censo;25417;16.1.2.2.3.2;Situação domiciliar
 23;Censo;25418;16.1.2.2.3.2.1;Urbana
 23;Censo;25419;16.1.2.2.3.2.2;Rural
-
-10065;Panorama Brasil;60220;4;Trabalho
-10065;Panorama Brasil;60288;4.1;Pessoas de 10 anos ou mais de idade, ocupadas na semana de referência
-10065;Panorama Brasil;60289;4.1.1;Sexo
-10065;Panorama Brasil;60290;4.1.1.1;Masculino
-10065;Panorama Brasil;60291;4.1.1.2;Feminino
-10065;Panorama Brasil;60292;4.1.2;Trabalho principal
-10065;Panorama Brasil;60293;4.1.2.1;Categoria do emprego
-10065;Panorama Brasil;60294;4.1.2.1.1;Com carteira de trabalho assinada
-10065;Panorama Brasil;60297;4.1.2.1.1.1;Sexo
-10065;Panorama Brasil;60298;4.1.2.1.1.1.1;Masculino
-10065;Panorama Brasil;60299;4.1.2.1.1.1.2;Feminino
-10065;Panorama Brasil;60295;4.1.2.1.2;Sem carteira de trabalho assinada
-10065;Panorama Brasil;60300;4.1.2.1.2.1;Sexo
-10065;Panorama Brasil;60301;4.1.2.1.2.1.1;Masculino
-10065;Panorama Brasil;60302;4.1.2.1.2.1.2;Feminino
-10065;Panorama Brasil;60296;4.1.2.1.3;Militares e funcionários públicos estatutários
-10065;Panorama Brasil;60303;4.1.2.1.3.1;Sexo
-10065;Panorama Brasil;60304;4.1.2.1.3.1.1;Masculino
-10065;Panorama Brasil;60305;4.1.2.1.3.1.2;Feminino
-10065;Panorama Brasil;60306;4.1.2.2;Posição na ocupação
-10065;Panorama Brasil;60307;4.1.2.2.1;Conta própria
-10065;Panorama Brasil;60308;4.1.2.2.1.1;Sexo
-10065;Panorama Brasil;60309;4.1.2.2.1.1.1;Masculino
-10065;Panorama Brasil;60310;4.1.2.2.1.1.2;Feminino
-10065;Panorama Brasil;60311;4.1.2.2.2;Empregadores
-10065;Panorama Brasil;60312;4.1.2.2.2.1;Sexo
-10065;Panorama Brasil;60313;4.1.2.2.2.1.1;Masculino
-10065;Panorama Brasil;60314;4.1.2.2.2.1.2;Feminino
-10065;Panorama Brasil;60315;4.1.2.2.3;Empregados
-10065;Panorama Brasil;60316;4.1.2.2.3.1;Sexo
-10065;Panorama Brasil;60317;4.1.2.2.3.1.1;Masculino
-10065;Panorama Brasil;60318;4.1.2.2.3.1.2;Feminino
-10065;Panorama Brasil;60319;4.1.2.2.4;Não remunerados
-10065;Panorama Brasil;60320;4.1.2.2.4.1;Sexo
-10065;Panorama Brasil;60321;4.1.2.2.4.1.1;Masculino
-10065;Panorama Brasil;60322;4.1.2.2.4.1.2;Feminino
-10065;Panorama Brasil;60323;4.1.2.2.5;Trabalhadores na construção para o próprio uso
-10065;Panorama Brasil;60324;4.1.2.2.5.1;Sexo
-10065;Panorama Brasil;60325;4.1.2.2.5.1.1;Masculino
-10065;Panorama Brasil;60326;4.1.2.2.5.1.2;Feminino
-10065;Panorama Brasil;60327;4.1.2.2.6;Trabalhadores na produção para o próprio consumo
-10065;Panorama Brasil;60328;4.1.2.2.6.1;Sexo
-10065;Panorama Brasil;60329;4.1.2.2.6.1.1;Masculino
-10065;Panorama Brasil;60330;4.1.2.2.6.1.2;Feminino
-
 23;Censo;26230;2.4.3.1.3.2.4;45 a 48 horas
 23;Censo;26231;2.4.3.1.3.2.5;49 horas ou mais
-
-23;Censo;23242;15.2.4.1;10 a 13 anos de idade
-23;Censo;23243;15.2.4.1.1;Condição de alfabetizado
-23;Censo;23244;15.2.4.1.1.1;Alfabetizado
-23;Censo;23245;15.2.4.1.1.2;Não alfabetizado
-
-23;Censo;23305;15.2.4.2;14 ou 15 anos de idade
-23;Censo;23306;15.2.4.2.1;Condição de alfabetizado
-23;Censo;23307;15.2.4.2.1.1;Alfabetizado
-23;Censo;23308;15.2.4.2.1.2;Não alfabetizado
-
-23;Censo;23368;15.2.4.3;16 ou 17 anos de idade
-23;Censo;23369;15.2.4.3.1;Condição de alfabetizado
-23;Censo;23370;15.2.4.3.1.1;Alfabetizado
-23;Censo;23371;15.2.4.3.1.2;Não alfabetizado
-
-10065;Panorama Brasil;60219;3;Educação
-10065;Panorama Brasil;60227;3.1;Taxa de analfabetismo
-10065;Panorama Brasil;60228;3.1.1;Grupo de idade
-10065;Panorama Brasil;60229;3.1.1.1;10 anos ou mais de idade
-10065;Panorama Brasil;60230;3.1.1.1.1;10 a 14 anos de idade
-10065;Panorama Brasil;60231;3.1.1.1.2;15 anos ou mais de idade
-
-23;Censo;25301;19.9.2;Ano 2010
-23;Censo;25302;19.9.2.1;Grupo de idade
-23;Censo;25304;19.9.2.1.1;15 a 24 anos
-23;Censo;25305;19.9.2.1.2;24 a 59 anos
-23;Censo;25306;19.9.2.1.3;60 anos ou mais
-
-23;Censo;24305;17.3;População residente
-23;Censo;29220;17.3.1;Condição de alfabetizado
-23;Censo;24306;17.3.1.1;Alfabetizado
-23;Censo;24307;17.3.1.1.1;Grupo de idade
-23;Censo;24308;17.3.1.1.1.1;10 anos ou mais
-23;Censo;24309;17.3.1.1.1.1.1;Sexo
-23;Censo;24310;17.3.1.1.1.1.1.1;Masculino
-23;Censo;24311;17.3.1.1.1.1.1.2;Feminino
-23;Censo;24312;17.3.1.1.1.2;15 anos ou mais
-23;Censo;24313;17.3.1.1.1.2.1;Sexo
-23;Censo;24314;17.3.1.1.1.2.1.1;Masculino
-23;Censo;24315;17.3.1.1.1.2.1.2;Feminino
-23;Censo;24316;17.3.1.1.1.3;5 a 9 anos
-23;Censo;24317;17.3.1.1.1.3.1;Sexo
-23;Censo;24318;17.3.1.1.1.3.1.1;Masculino
-23;Censo;24319;17.3.1.1.1.3.1.2;Feminino
-23;Censo;24320;17.3.1.1.1.4;10 a 14 anos
-23;Censo;24321;17.3.1.1.1.4.1;Sexo
-23;Censo;24322;17.3.1.1.1.4.1.1;Masculino
-23;Censo;24323;17.3.1.1.1.4.1.2;Feminino
-23;Censo;24324;17.3.1.1.1.5;20 a 24 anos
-23;Censo;24325;17.3.1.1.1.5.1;Sexo
-23;Censo;24326;17.3.1.1.1.5.1.1;Masculino
-23;Censo;24327;17.3.1.1.1.5.1.2;Feminino
-23;Censo;24328;17.3.1.1.1.6;25 a 29 anos
-23;Censo;24329;17.3.1.1.1.6.1;Sexo
-23;Censo;24330;17.3.1.1.1.6.1.1;Masculino
-23;Censo;24331;17.3.1.1.1.6.1.2;Feminino
-23;Censo;24332;17.3.1.1.1.7;30 a 34 anos
-23;Censo;24333;17.3.1.1.1.7.1;Sexo
-23;Censo;24334;17.3.1.1.1.7.1.1;Masculino
-23;Censo;24335;17.3.1.1.1.7.1.2;Feminino
-23;Censo;24336;17.3.1.1.1.8;35 a 39 anos
-23;Censo;24337;17.3.1.1.1.8.1;Sexo
-23;Censo;24338;17.3.1.1.1.8.1.1;Masculino
-23;Censo;24339;17.3.1.1.1.8.1.2;Feminino
-23;Censo;24340;17.3.1.1.1.9;40 a 44 anos
-23;Censo;24341;17.3.1.1.1.9.1;Sexo
-23;Censo;24342;17.3.1.1.1.9.1.1;Masculino
-23;Censo;24343;17.3.1.1.1.9.1.2;Feminino
-23;Censo;24344;17.3.1.1.1.10;45 a 49 anos
-23;Censo;24345;17.3.1.1.1.10.1;Sexo
-23;Censo;24346;17.3.1.1.1.10.1.1;Masculino
-23;Censo;24347;17.3.1.1.1.10.1.2;Feminino
-23;Censo;24348;17.3.1.1.1.11;50 a 54 anos
-23;Censo;24349;17.3.1.1.1.11.1;Sexo
-23;Censo;24350;17.3.1.1.1.11.1.1;Masculino
-23;Censo;24351;17.3.1.1.1.11.1.2;Feminino
-23;Censo;24352;17.3.1.1.1.12;55 a 59 anos
-23;Censo;24353;17.3.1.1.1.12.1;Sexo
-23;Censo;24354;17.3.1.1.1.12.1.1;Masculino
-23;Censo;24355;17.3.1.1.1.12.1.2;Feminino
-23;Censo;24356;17.3.1.1.1.13;60 a 64 anos
-23;Censo;24357;17.3.1.1.1.13.1;Sexo
-23;Censo;24358;17.3.1.1.1.13.1.1;Masculino
-23;Censo;24359;17.3.1.1.1.13.1.2;Feminino
-23;Censo;24360;17.3.1.1.1.14;65 a 69 anos
-23;Censo;24361;17.3.1.1.1.14.1;Sexo
-23;Censo;24362;17.3.1.1.1.14.1.1;Masculino
-23;Censo;24363;17.3.1.1.1.14.1.2;Feminino
-23;Censo;24364;17.3.1.1.1.15;70 a 74 anos
-23;Censo;24365;17.3.1.1.1.15.1;Sexo
-23;Censo;24366;17.3.1.1.1.15.1.1;Masculino
-23;Censo;24367;17.3.1.1.1.15.1.2;Feminino
-23;Censo;24368;17.3.1.1.1.16;75 a 79 anos
-23;Censo;24369;17.3.1.1.1.16.1;Sexo
-23;Censo;24370;17.3.1.1.1.16.1.1;Masculino
-23;Censo;24371;17.3.1.1.1.16.1.2;Feminino
-23;Censo;24372;17.3.1.1.1.17;80 a 89 anos
-23;Censo;24373;17.3.1.1.1.17.1;Sexo
-23;Censo;24374;17.3.1.1.1.17.1.1;Masculino
-23;Censo;24375;17.3.1.1.1.17.1.2;Feminino
-23;Censo;24376;17.3.1.1.1.18;90 a 99 anos
-23;Censo;24377;17.3.1.1.1.18.1;Sexo
-23;Censo;24378;17.3.1.1.1.18.1.1;Masculino
-23;Censo;24379;17.3.1.1.1.18.1.2;Feminino
-23;Censo;24380;17.3.1.1.1.19;100 anos ou mais
-23;Censo;24381;17.3.1.1.1.19.1;Sexo
-23;Censo;24382;17.3.1.1.1.19.1.1;Masculino
-23;Censo;24383;17.3.1.1.1.19.1.2;Feminino
-
-10058;Panorama municipal;60043;3.2;Taxa de escolarização
-10058;Panorama municipal;60044;3.2.1;Grupo de idade
 10058;Panorama municipal;60045;3.2.1.1;6 a 14 anos de idade
-
-23;Censo;28114;20.4;Estabelecimentos
-23;Censo;28115;20.4.1;Espécie do estabelecimento
-23;Censo;28116;20.4.1.1;Agropecuário
-23;Censo;28117;20.4.1.2;Ensino
 23;Censo;28118;20.4.1.3;Saúde
-
 39;Taxa de mortalidade infantil;30279;1;Taxa de mortalidade infantil
-10058;Panorama municipal;60034;4.2;Mortalidade infantil
-
-47;Pesquisa Nacional de Saúde;48917;2.2.1.1.1.1;Aborto
-
-13;Ensino - matrículas, docentes e rede escolar;5960;3.4;Ensino superior
 13;Ensino - matrículas, docentes e rede escolar;5961;3.4.1;Escola pública municipal
 13;Ensino - matrículas, docentes e rede escolar;5962;3.4.2;Escola pública estadual
 13;Ensino - matrículas, docentes e rede escolar;5963;3.4.3;Escola pública federal
-
-13;Ensino - matrículas, docentes e rede escolar;5950;3.2;Ensino fundamental
 13;Ensino - matrículas, docentes e rede escolar;5951;3.2.1;Escola pública municipal
 13;Ensino - matrículas, docentes e rede escolar;5952;3.2.2;Escola pública estadual
 13;Ensino - matrículas, docentes e rede escolar;5953;3.2.3;Escola pública federal
-13;Ensino - matrículas, docentes e rede escolar;5954;3.2.4;Escola privada
-13;Ensino - matrículas, docentes e rede escolar;5955;3.3;Ensino médio
 13;Ensino - matrículas, docentes e rede escolar;5956;3.3.1;Escola pública municipal
 13;Ensino - matrículas, docentes e rede escolar;5957;3.3.2;Escola pública estadual
 13;Ensino - matrículas, docentes e rede escolar;5958;3.3.3;Escola pública federal
-
-23;Censo;25125;19.1;Domicílios particulares permanentes
-23;Censo;29520;19.1.1;Situação domiciliar
-23;Censo;29521;19.1.1.1;Urbana
-23;Censo;29522;19.1.1.2;Rural
-23;Censo;29268;19.1.2;Tipo de saneamento
-23;Censo;29269;19.1.2.1;Adequado
-23;Censo;29270;19.1.2.1.1;Situação domiciliar
 23;Censo;29271;19.1.2.1.1.1;Urbana
 23;Censo;29272;19.1.2.1.1.2;Rural
-23;Censo;29273;19.1.2.2;Inadequado
-23;Censo;29274;19.1.2.2.1;Situação domiciliar
 23;Censo;29275;19.1.2.2.1.1;Urbana
 23;Censo;29276;19.1.2.2.1.2;Rural
-23;Censo;29277;19.1.2.3;Semi-adequado
-23;Censo;29278;19.1.2.3.1;Situação domiciliar
 23;Censo;29279;19.1.2.3.1.1;Urbana
 23;Censo;29280;19.1.2.3.1.2;Rural
-
-23;Censo;24991;17.1.2.3;Próprio
 23;Censo;24992;17.1.2.3.1;Já quitado
 23;Censo;24993;17.1.2.3.2;Em aquisição
