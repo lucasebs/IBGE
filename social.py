@@ -1,4 +1,4 @@
-social = [["raca","cor","pele"],
+social = [["raça","cor","pele"],
 "gini",
 ["grav","adoles","b"],
 "solte",
