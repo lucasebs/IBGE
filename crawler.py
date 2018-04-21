@@ -157,7 +157,7 @@ def main():
 	# file = open_file('indicadores_filtro')
 	# compare(file, social)
 	
-	file = open_file('resultados_cor_raca', True)
+	file = open_file('resultados_', True)
 	crawl_resultados(source,file)		
 	
 	close_file(file)    
