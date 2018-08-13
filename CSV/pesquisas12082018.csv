@@ -1,5 +1,5 @@
 id;nome
-1;MUNIC
+1;MUNIC - Perfil dos Municípios Brasileiros
 11;SNIG - Pesquisa Nacional de Informação de Gênero
 13;Ensino - matrículas, docentes e rede escolar
 14;Produção Agrícola - Lavoura Temporária
@@ -12,7 +12,7 @@ id;nome
 21;Finanças públicas
 22;Frota
 23;Censo
-24;Censo agropecuário
+24;Censo Agropecuário
 29;Instituições financeiras
 30;Pesquisa nacional de saneamento básico
 31;Produção agrícola - Cereais, leguminosas e oleaginosas
@@ -53,6 +53,18 @@ id;nome
 10066;Entidades de assistência social privadas sem fins lucrativos
 10070;PNADC - Pesquisa Nacional por Amostra de Domicílios Contínua
 10071;Países
-10072;ESTADIC
+10072;ESTADIC - Perfil dos Estados Brasileiros
 10073;Estatísticas de Gênero: indicadores sociais das mulheres no Brasil
 10074;Contas Econômicas Ambientais da Água
+10075;MUNIC - Suplemento Finanças públicas
+10076;ESTADIC - Suplemento Esporte
+10077;MUNIC - Suplemento Esporte
+10078;MUNIC - Suplemento Meio Ambiente
+10079;MUNIC - Suplemento Assistência Social
+10080;ESTADIC - Suplemento Cultura
+10081;ESTADIC - Suplemento Inclusão Produtiva
+10082;ESTADIC - Suplemento Assistência Social
+10083;Estatísticas de Finanças Públicas e Conta Intermediária de Governo
+10084;MUNIC - Suplemento Inclusão Produtiva
+10085;MUNIC - Suplemento Cultura
+10086;Retroprojeção da população

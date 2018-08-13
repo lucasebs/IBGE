@@ -1,7 +1,6 @@
 import requests as rq
-# import json
+import json
 import pandas as pd
-from social import *
 
 def open_file(dado, resultado):
 	path = 'CSV/'
@@ -12,7 +11,8 @@ def open_file(dado, resultado):
 
 	file = open(path, 'a')
 		
-	file.write('pesquisa_id;pesquisa_nome;id;posicao;nome\n')
+	# file.write('pesquisa_id;pesquisa_nome;id;posicao;nome\n')
+	file.write('indicador;municipio;ano;resultado\n')
 	return file
 
 def close_file(file):
@@ -61,8 +61,27 @@ def crawl(source,file):
 	for pesquisa in pesquisas['id']:
 		if pesquisa is not 'id':
 			print(pesquisa)
-			response = rq.get(get_url(pesquisa, source))
-			indicadores = response.json()
+
+			url = get_url(pesquisa, source)
+
+			print(url)
+			response = rq.get(str(url))
+
+			print(response.encoding)
+			
+			print(response.text)
+
+			try:
+			    indicadores = response.json()
+			except Exception as err:
+				print("Erro: {0}".format(err))
+			finally:
+			    print(pesquisa)
+			    break
+
+			# indicadores = response.json()
+
+			# indicadores = json.loads(response.text)
 			# print(indicadores)
 			# print(cont)
 		set_indicadores(pesquisa, pesquisas['nome'][cont], indicadores, file)
@@ -96,20 +115,34 @@ def compare(file, list):
 			write_indicadores(" "," "," "," "," ", file)
 		
 
-def write_resultados(resultado, municipio, file):
-	file.write(municipio + ';' + resultado + '\n')	
+def write_resultados(indicador, resultado, ano, municipio, file):
+	file.write(indicador + ';' + municipio + ';' + ano  + ';' + resultado + '\n')	
 
-def set_resultados(resultados, municipio, file, cont):
-	result = 0
-	for resultado in resultados:
-		if resultado["res"][0]["res"]["2010"] == '99999999999992':
-			result += 0
+def set_resultados(indicador, resultados, municipio, file, ano):
+	if resultados == '':
+		write_resultados(indicador, "0", "0", str(municipio), file)
+	else:
+		if ano == '':
+			for resultado in resultados:
+				keys = resultado["res"][0]["res"].keys()
+				for key in keys:
+					result = str(resultado["res"][0]["res"][key])
+					write_resultados(indicador, result, str(key), str(municipio), file)
 		else:
-			result += int(resultado["res"][0]["res"]["2010"])
+			for resultado in resultados:
+				result = str(resultado["res"][0]["res"][ano])
+				write_resultados(indicador, result, str(ano), str(municipio), file)
+	# result = 0
+	# for resultado in resultados:
 
-		if cont == 9:
-			write_resultados(str(result), str(municipio), file)			
-			cont = 0
+	# 	if resultado["res"][0]["res"]["2010"] == '99999999999992':
+	# 		result += 0
+	# 	else:
+	# 		result += int(resultado["res"][0]["res"]["2010"])
+
+	# 	if cont == 9:
+	# 		write_resultados(str(result), str(municipio), file)			
+	# 		cont = 0
 		
 
 
@@ -123,42 +156,64 @@ def crawl_resultados(source, file):
 	pesquisas = df['pesquisa_id']
 	print(df)
 
-
+	cont_m = 1
+	ano = '2010'
 	for municipio in municipios:
-		print(municipio)	
+		print(cont_m, municipio)	
 		# print(type(indicador))
 		cont = 0			
-		cont1 = 0
 		# for pesquisa in df['pesquisa_id']:
 		for indicador in indicadores:
 			print(indicador)
 
 			# indicador = df['posicao'][cont]
 			pesquisa = pesquisas[cont]
-			
+			print(pesquisa)
+			# print(municipio)
+			# print(source)
+
 			url = get_url_resultados(str(pesquisa), str(indicador), str(municipio), source)
+			print(url)
 
-			response = rq.get(url)
-			resultados = response.json()
+			# response = rq.get(url)
+			# print(response)
+			# resultados = response.json()
+			# print(resultados)
+			resultados = rq.get(url).json()
+			print(resultados)
 
-			set_resultados(resultados, municipio, file, cont1)
+
+			if len(resultados) == 0:
+				set_resultados(str(indicador), '', municipio, file, ano)
+
+			if cont == 10:
+				ano = '2013'
+			elif cont == 11:
+				ano = '2015'
+			elif cont == 20:
+				ano = '2010'
+				
+			set_resultados(str(indicador), resultados, municipio, file, ano)
 			cont += 1
-			cont1 += 1
-			if cont1 == 10:
-				cont1 = 0
+
+
+		cont_m += 1
 		
 
 def main():
 	source = 'https://servicodados.ibge.gov.br/api/v1/pesquisas/'
 
-	# file = open_file('indicadores')
-	# crawl(source,file)	
+
+	file = open_file('indicadores', False)
+	crawl(source,file)	
 
 	# file = open_file('indicadores_filtro')
 	# compare(file, social)
 	
-	file = open_file('resultados_', True)
-	crawl_resultados(source,file)		
+	# dado = 'srv_bsc_saude'
+
+	# file = open_file('resultados_', True)
+	# crawl_resultados(source,file)		
 	
 	close_file(file)    
 
