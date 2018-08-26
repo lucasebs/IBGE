@@ -230,8 +230,8 @@ def tratar_manual(indicador):
 	
 	file.write('Clínica médica\n')
 
-	cont = 0 
-	quantidade_indicadores = 1
+	cont = 1
+	quantidade_indicadores = 4
 	i = 0
 	result = ''
 	valor = 0
@@ -246,7 +246,7 @@ def tratar_manual(indicador):
 			result += '\n'
 			file.write(result)
 			result = ''		
-			cont = 0	
+			cont = 1	
 		else:
 			cont += 1
 
@@ -254,11 +254,11 @@ def tratar_manual(indicador):
 
 def get_json(indicador, file):
 	for i in range(1,7):		
-		path_json = 'json/' + indicador + '_' + str(i) + '.json'
+		path_json = 'json/populacao/' + indicador + '_' + str(i) + '.json'
 		with open(path_json) as js:
 			r = json.load(js)
 
-		set_resultados_manual("1.1.1.2", r, "", file, '')
+		set_resultados_manual("1.1.1.3", r, "", file, '')
 
 
 def main():
@@ -273,26 +273,28 @@ def main():
 	
 	# dado = 'srv_bsc_saude'
 
-	indicador = 'saude01_b'
-	
+	pontos = ['']
 
-	path_result = 'resultados_' + indicador
-	
-	file = open_file(path_result, True)
-	# crawl_resultados(source,file)		
+	for ponto in pontos:
 
-	# for i in range(1,7):
-	# 	path_json = 'json/' + indicador + '_' + str(i) + '.json'
-	# 	with open(path_json) as js:
-	# 		r = json.load(js)
+		indicador = 'populacao' + ponto
 
-	# 	set_resultados_manual("1.1.1.1", r, "", file, '')
+		path_result = 'resultados_' + indicador
+		
+		file = open_file(path_result, True)
+		# crawl_resultados(source,file)		
 
+		# for i in range(1,7):
+		# 	path_json = 'json/' + indicador + '_' + str(i) + '.json'
+		# 	with open(path_json) as js:
+		# 		r = json.load(js)
 
-	get_json(indicador, file)
-	close_file(file)    
+		# 	set_resultados_manual("1.1.1.1", r, "", file, '')
 
-	tratar_manual(indicador)
+		get_json(indicador, file)
+		close_file(file)    
+
+		tratar_manual(indicador)
 
 	
 
