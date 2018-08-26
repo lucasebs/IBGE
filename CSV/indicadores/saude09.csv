@@ -1,0 +1,129 @@
+32;Serviços de saúde;28163;1;Estabelecimentos de Saúde
+32;Serviços de saúde;28164;1.1;Atendimento de emergência
+32;Serviços de saúde;28165;1.1.1;Especialidade médica
+32;Serviços de saúde;28167;1.1.1.1;Cirurgia bucomaxilofacial
+32;Serviços de saúde;28168;1.1.1.2;Clínica médica
+32;Serviços de saúde;28169;1.1.1.3;Neurocirurgia
+32;Serviços de saúde;28170;1.1.1.4;Obstetrícia
+32;Serviços de saúde;28171;1.1.1.5;Pediatria
+32;Serviços de saúde;28172;1.1.1.6;Psiquiatria
+32;Serviços de saúde;28173;1.1.1.7;Traumato-ortopedia
+32;Serviços de saúde;28166;1.1.1.8;Outras especialidades cirúrgicas
+32;Serviços de saúde;28174;1.1.1.9;Outros
+32;Serviços de saúde;28175;1.2;Categoria do estabelecimento
+32;Serviços de saúde;28176;1.2.1;Geral
+32;Serviços de saúde;28177;1.2.1.1;Tipo de atendimento
+32;Serviços de saúde;28178;1.2.1.1.1;Com internação
+32;Serviços de saúde;28179;1.2.1.1.1.1;Esfera administrativa
+32;Serviços de saúde;28180;1.2.1.1.1.1.1;Público
+32;Serviços de saúde;28184;1.2.1.1.1.1.2;Privado
+32;Serviços de saúde;28185;1.2.1.1.1.1.2.1;SUS
+32;Serviços de saúde;28186;1.2.1.1.2;Sem internação
+32;Serviços de saúde;28187;1.2.1.1.2.1;Esfera administrativa
+32;Serviços de saúde;28188;1.2.1.1.2.1.1;Público
+32;Serviços de saúde;28192;1.2.1.1.2.1.2;Privado
+32;Serviços de saúde;28193;1.2.1.1.2.1.2.1;SUS
+32;Serviços de saúde;28194;1.2.2;Com especialidades
+32;Serviços de saúde;28195;1.2.2.1;Tipo de atendimento
+32;Serviços de saúde;28196;1.2.2.1.1;Com internação
+32;Serviços de saúde;28197;1.2.2.1.1.1;Esfera administrativa
+32;Serviços de saúde;28198;1.2.2.1.1.1.1;Público
+32;Serviços de saúde;28202;1.2.2.1.1.1.2;Privado
+32;Serviços de saúde;28203;1.2.2.1.1.1.2.1;SUS
+32;Serviços de saúde;28204;1.2.2.1.2;Sem internação
+32;Serviços de saúde;28205;1.2.2.1.2.1;Esfera administrativa
+32;Serviços de saúde;28206;1.2.2.1.2.1.1;Público
+32;Serviços de saúde;28210;1.2.2.1.2.1.2;Privado
+32;Serviços de saúde;28211;1.2.2.1.2.1.2.1;SUS
+32;Serviços de saúde;28212;1.2.3;Especializado
+32;Serviços de saúde;28213;1.2.3.1;Tipo de atendimento
+32;Serviços de saúde;28214;1.2.3.1.1;Com internação
+32;Serviços de saúde;28215;1.2.3.1.1.1;Esfera administrativa
+32;Serviços de saúde;28216;1.2.3.1.1.1.1;Público
+32;Serviços de saúde;28220;1.2.3.1.1.1.2;Privado
+32;Serviços de saúde;28221;1.2.3.1.1.1.2.1;SUS
+32;Serviços de saúde;28222;1.2.3.1.2;Sem internação
+32;Serviços de saúde;28223;1.2.3.1.2.1;Esfera administrativa
+32;Serviços de saúde;28224;1.2.3.1.2.1.1;Público
+32;Serviços de saúde;28228;1.2.3.1.2.1.2;Privado
+32;Serviços de saúde;28229;1.2.3.1.2.1.2.1;SUS
+32;Serviços de saúde;28230;1.3;Esfera administrativa
+32;Serviços de saúde;28231;1.3.1;Privado
+32;Serviços de saúde;28232;1.3.1.1;Com fins lucrativos
+32;Serviços de saúde;28233;1.3.1.2;Sem fins lucrativos
+32;Serviços de saúde;47374;1.3.1.3;SUS
+32;Serviços de saúde;28234;1.3.2;Público
+32;Serviços de saúde;28235;1.3.2.1;Federal
+32;Serviços de saúde;28236;1.3.2.2;Estadual
+32;Serviços de saúde;28237;1.3.2.3;Municipal
+32;Serviços de saúde;28238;1.4;Modalidade de prestação de serviço
+32;Serviços de saúde;28239;1.4.1;Particular
+32;Serviços de saúde;28241;1.4.2;Plano de terceiros
+32;Serviços de saúde;28240;1.4.3;Plano próprio
+32;Serviços de saúde;28242;1.4.4;SUS
+32;Serviços de saúde;28243;1.4.4.1;SUS Ambulatorial
+32;Serviços de saúde;28244;1.4.4.2;SUS Diálise
+32;Serviços de saúde;28245;1.4.4.3;SUS Emergência
+32;Serviços de saúde;28246;1.4.4.4;SUS Internação
+32;Serviços de saúde;28247;1.4.4.5;SUS UTI/CTI
+32;Serviços de saúde;28248;1.5;Tipo de atendimento
+32;Serviços de saúde;28249;1.5.1;Com internação
+32;Serviços de saúde;28250;1.5.1.1;Esfera administrativa
+32;Serviços de saúde;28251;1.5.1.1.1;Público
+32;Serviços de saúde;28255;1.5.1.1.2;Privado
+32;Serviços de saúde;28256;1.5.1.1.2.1;SUS
+32;Serviços de saúde;28257;1.5.2;Sem internação
+32;Serviços de saúde;28258;1.5.2.1;Esfera administrativa
+32;Serviços de saúde;28259;1.5.2.1.1;Público
+32;Serviços de saúde;28263;1.5.2.1.2;Privado
+32;Serviços de saúde;28264;1.5.2.1.2.1;SUS
+32;Serviços de saúde;28265;1.6;Tipo de especialidade
+32;Serviços de saúde;28266;1.6.1;Atendimento ambulatorial
+32;Serviços de saúde;28267;1.6.1.1;Sem atendimento médico
+32;Serviços de saúde;28268;1.6.1.2;Com especialidades médicas básicas
+32;Serviços de saúde;28269;1.6.1.3;Com outras especialidades médicas
+32;Serviços de saúde;28270;1.6.1.4;Com atendimento odontológico
+32;Serviços de saúde;28271;1.6.2;Serviços de apoio à diagnose e terapia - SADT
+32;Serviços de saúde;28272;1.6.2.1;Esfera administrativa
+32;Serviços de saúde;28273;1.6.2.1.1;Público
+32;Serviços de saúde;28277;1.6.2.1.2;Privado
+32;Serviços de saúde;28278;1.6.2.1.2.1;SUS
+32;Serviços de saúde;28279;1.7;Tipo de estabelecimento
+32;Serviços de saúde;29756;1.7.1;Único
+32;Serviços de saúde;29757;1.7.1.1;Esfera administrativa
+32;Serviços de saúde;29758;1.7.1.1.1;Público
+32;Serviços de saúde;29759;1.7.1.1.2;Privado
+32;Serviços de saúde;29760;1.7.1.1.2.1;SUS
+32;Serviços de saúde;28280;1.7.2;Terceirizado
+32;Serviços de saúde;28281;1.7.2.1;Esfera administrativa
+32;Serviços de saúde;28282;1.7.2.1.1;Público
+32;Serviços de saúde;28286;1.7.2.1.2;Privado
+32;Serviços de saúde;28287;1.7.2.1.2.1;SUS
+32;Serviços de saúde;28288;1.7.3;Com terceirização
+32;Serviços de saúde;28289;1.7.3.1;Esfera administrativa
+32;Serviços de saúde;28290;1.7.3.1.1;Público
+32;Serviços de saúde;28294;1.7.3.1.2;Privado
+32;Serviços de saúde;28295;1.7.3.1.2.1;SUS
+32;Serviços de saúde;28296;2;Equipamentos
+32;Serviços de saúde;28297;2.1;Eletrocardiógrafo
+32;Serviços de saúde;28298;2.2;Eletroencefalógrafo
+32;Serviços de saúde;28299;2.3;Equipamento de hemodiálise
+32;Serviços de saúde;28300;2.4;Mamógrafo
+32;Serviços de saúde;28301;2.4.1;Com comando simples
+32;Serviços de saúde;28302;2.4.2;Com estéreo-taxia
+32;Serviços de saúde;28303;2.5;Raio X
+32;Serviços de saúde;28304;2.5.1;Até 100mA
+32;Serviços de saúde;28305;2.5.2;100 a 500mA
+32;Serviços de saúde;28306;2.5.3;Mais de 500mA
+32;Serviços de saúde;28307;2.6;Raio X para densitometria óssea
+32;Serviços de saúde;28308;2.7;Ressonância magnética
+32;Serviços de saúde;28309;2.8;Tomógrafo
+32;Serviços de saúde;28310;2.9;Ultrassom doppler colorido
+32;Serviços de saúde;28311;3;Número de leitos para internação em estabelecimentos de saúde
+32;Serviços de saúde;28312;3.1;Esfera administrativa
+32;Serviços de saúde;28313;3.1.1;Público
+32;Serviços de saúde;28314;3.1.1.1;Federal
+32;Serviços de saúde;28315;3.1.1.2;Estadual
+32;Serviços de saúde;28316;3.1.1.3;Municipal
+32;Serviços de saúde;28317;3.1.2;Privado
+32;Serviços de saúde;28318;3.1.2.1;SUS
