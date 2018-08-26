@@ -132,6 +132,9 @@ def set_resultados(indicador, resultados, municipio, file, ano):
 			for resultado in resultados:
 				result = str(resultado["res"][0]["res"][ano])
 				write_resultados(indicador, result, str(ano), str(municipio), file)
+
+
+
 	# result = 0
 	# for resultado in resultados:
 
@@ -198,24 +201,102 @@ def crawl_resultados(source, file):
 
 
 		cont_m += 1
+
+def set_resultados_manual(indicador, resultados, municipio, file, ano):
+
+	if resultados == '':
+		write_resultados(indicador, "0", "0", str(municipio), file)
+	else:
+		if ano == '':
+			for resultado in resultados:
+				muns = resultado["res"]
+				for mun in muns:
+					keys = mun["res"].keys()
+					for key in keys:
+						result = str(mun["res"][key])
+						write_resultados(indicador, result, str(key), str(mun["localidade"]), file)
+		else:
+			for resultado in resultados:
+				result = str(resultado["res"][0]["res"][ano])
+				write_resultados(indicador, result, str(ano), str(mun["localidade"]), file)					
 		
+def tratar_manual(indicador):
+
+	df = pd.read_csv('CSV/resultados/resultados_' + indicador + '.csv', error_bad_lines=False, sep=';')
+	file = open('CSV/resultados/tratados/resultados_tratados_' + indicador + '.csv', 'a')
+	# file.write(';Masculin;Feminino\n')
+	# file.write('Urbana;Rural;Urbana;Rural;Urbana;Rural;45 a 48 horas;49 horas ou mais;6 a 14 anos de idade;Saúde;Taxa de mortalidade infantil;Escola pública municipal;Escola pública estadual;Escola pública federal;Escola pública municipal;Escola pública estadual;Escola pública federal;Escola pública municipal;Escola pública estadual;Escola pública federal;Urbana;Rural;Urbana;Rural;Urbana;Rural;Já quitado;Em aquisição\n')
+	# file.write('Cirurgia bucomaxilofacial;Clínica médica;Neurocirurgia;Obstetrícia;Pediatria;Psiquiatria;Traumato-ortopedia;Outras especialidades cirúrgicas;Outros')
+	
+	file.write('Clínica médica\n')
+
+	cont = 1
+	quantidade_indicadores = 4
+	i = 0
+	result = ''
+	valor = 0
+
+	for municipio in df['municipio']:
+		print(municipio)
+
+			
+		result += ";" + str(df['resultado'][i])
+
+		if cont == quantidade_indicadores:
+			result += '\n'
+			file.write(result)
+			result = ''		
+			cont = 1	
+		else:
+			cont += 1
+
+		i += 1
+
+def get_json(indicador, file):
+	for i in range(1,7):		
+		path_json = 'json/populacao/' + indicador + '_' + str(i) + '.json'
+		with open(path_json) as js:
+			r = json.load(js)
+
+		set_resultados_manual("1.1.1.3", r, "", file, '')
+
 
 def main():
 	source = 'https://servicodados.ibge.gov.br/api/v1/pesquisas/'
 
 
-	file = open_file('indicadores', False)
-	crawl(source,file)	
+	# file = open_file('indicadores', False)
+	# crawl(source,file)	
 
 	# file = open_file('indicadores_filtro')
 	# compare(file, social)
 	
 	# dado = 'srv_bsc_saude'
 
-	# file = open_file('resultados_', True)
-	# crawl_resultados(source,file)		
+	pontos = ['']
+
+	for ponto in pontos:
+
+		indicador = 'populacao' + ponto
+
+		path_result = 'resultados_' + indicador
+		
+		file = open_file(path_result, True)
+		# crawl_resultados(source,file)		
+
+		# for i in range(1,7):
+		# 	path_json = 'json/' + indicador + '_' + str(i) + '.json'
+		# 	with open(path_json) as js:
+		# 		r = json.load(js)
+
+		# 	set_resultados_manual("1.1.1.1", r, "", file, '')
+
+		get_json(indicador, file)
+		close_file(file)    
+
+		tratar_manual(indicador)
+
 	
-	close_file(file)    
 
 if __name__ == "__main__":
     main()
