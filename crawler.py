@@ -228,10 +228,10 @@ def tratar_manual(indicador):
 	# file.write('Urbana;Rural;Urbana;Rural;Urbana;Rural;45 a 48 horas;49 horas ou mais;6 a 14 anos de idade;Saúde;Taxa de mortalidade infantil;Escola pública municipal;Escola pública estadual;Escola pública federal;Escola pública municipal;Escola pública estadual;Escola pública federal;Escola pública municipal;Escola pública estadual;Escola pública federal;Urbana;Rural;Urbana;Rural;Urbana;Rural;Já quitado;Em aquisição\n')
 	# file.write('Cirurgia bucomaxilofacial;Clínica médica;Neurocirurgia;Obstetrícia;Pediatria;Psiquiatria;Traumato-ortopedia;Outras especialidades cirúrgicas;Outros')
 	
-	file.write('Clínica médica\n')
+	file.write('Serviços de saúde\n')
 
 	cont = 1
-	quantidade_indicadores = 4
+	quantidade_indicadores = 2
 	i = 0
 	result = ''
 	valor = 0
@@ -254,7 +254,7 @@ def tratar_manual(indicador):
 
 def get_json(indicador, file):
 	for i in range(1,7):		
-		path_json = 'json/populacao/' + indicador + '_' + str(i) + '.json'
+		path_json = 'json/' + indicador + '/' + indicador + '_' + str(i) + '.json'
 		with open(path_json) as js:
 			r = json.load(js)
 
@@ -277,7 +277,8 @@ def main():
 
 	for ponto in pontos:
 
-		indicador = 'populacao' + ponto
+		indicador = 'saude12' + ponto
+
 
 		path_result = 'resultados_' + indicador
 		
